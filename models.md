@@ -2,18 +2,30 @@ Models
 ======
 
 - Introduction
-- Register a Model
-- Basic usage
+	- Basic models
+		- Register a Model
+		- Basic usage
+	- Eloquent models
+		- Corcel
+		- Register a Model
+		- Basic usage
 
 Introduction
 ------------
+
+Themosis does not have an own wrapper around the WP_Query or it's own ORM. Instead it gives you al the freedom to implement your models in a way which fits best for your project. 
+
+
 
 Themosis framework comes with a basic system of models.
 
 A model will store the methods/functions that manipulate your data. You can perform actions to retrieve data from your WordPress database using WordPress core functions or you can perform actions to update those data.
 
+Basic models
+------------
+
 Register a Model
-----------------
+-----------------
 
 In order to create a model, simply create a new PHP class inside the `resources/models` directory. Here is an example of a model class that comes by default with the framework:
 
@@ -78,6 +90,10 @@ Route::get('home', function()
 	]);
 });
 ```
+
+
+Using eloquent as ORM
+---------------------
 
 > Store your `model` classes in the `resources/models` directory.
 
