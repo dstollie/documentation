@@ -1,4 +1,4 @@
-Action
+Action and Filter
 ======
 
 - Basic usage
@@ -9,7 +9,7 @@ Action
 Basic usage
 -----------
 
-The `Action` class is a wrapper of the WordPress action/hook API. The class only handles a method in order to register/add action hooks.
+With the `Action` and the `Filter` class you can register and remove WordPress actions and filters using the API/Hook. These classes are simple wrappers around the default WordPress functions.
 
 To register an action, simply use the `add()` method like so:
 
